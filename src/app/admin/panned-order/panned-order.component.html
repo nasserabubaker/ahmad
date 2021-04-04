@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>رقم الطلبية : {{OrderID}}</h2>
+    <h2>اسم الزبون:  <small>11</small></h2>
+    <ul class="responsive-table">
+      <li class="table-header">
+        <div class="col col-1">الوصف</div>
+        <div class="col col-1">المبلغ</div>
+        <div class="col col-1">سعر الواحدة</div>
+        <div class="col col-1">الكمية</div>
+        <div class="col col-1">اسم القطعة</div>
+      </li>
+      <app-panned-order-row  *ngFor="let item of orderData" [s]="item" ></app-panned-order-row>
+    </ul>
+  </div>
