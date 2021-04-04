@@ -9,14 +9,14 @@ const session = require('express-session')
 const mysql = require('mysql');
 const port = 3000;
 const con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "test"
+    host: "lawrencegift.com",
+    user: "mohamaf",
+    password: "10821044mM",
+    database: "ahmadstroe"
 });
 const app = express();
 const path = require('path');
-app.use(express.static('./dist/project'));
+app.use(express.static('../dist/project'));
 
 app.get('/*', (req, res) =>
     res.sendFile('index.html', {root: 'dist/project/'}),
